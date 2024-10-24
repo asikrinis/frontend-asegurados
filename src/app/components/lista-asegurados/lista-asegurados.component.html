@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <h2>Lista de Asegurados</h2>
+  <div class="card mt-3" *ngFor="let asegurado of asegurados">
+    <div class="card-body">
+      <h5 class="card-title">{{ asegurado.nombre }} {{ asegurado.apellidoPaterno }} {{ asegurado.apellidoMaterno }}</h5>
+      <p class="card-text">
+        <strong>Número de Póliza:</strong> {{ asegurado.numeroPoliza }}<br>
+        <strong>Email:</strong> {{ asegurado.email }}<br>
+        <strong>Teléfono:</strong> {{ asegurado.numeroMovil }}<br>
+        <strong>Dirección:</strong> {{ asegurado.direccion.calle }}, {{ asegurado.direccion.colonia }}, {{ asegurado.direccion.ciudad }}
+      </p>
+    </div>
+  </div>
+</div>
